@@ -1,0 +1,31 @@
+header
+    padding: 15px 0
+    background: #f3f3f3
+    nav
+        .navigation
+            width: 55%
+            margin: 0 auto
+            padding: 0
+            display: flex
+            justify-content: space-around
+            &_item
+                list-style: none
+            &_link
+                color: #000
+                text-decoration-line: none
+                font-weight: 300
+                font-size: 20px
+                &:hover::after
+                    width: 100%
+                &::after
+                    background-color: #ff6000
+                    display: block
+                    content: ""
+                    height: 1.5px
+                    width: 0%
+                    transition: width .3s ease-in-out
+
+.disabled
+    pointer-events: none
+    cursor: default
+    opacity: 0.65

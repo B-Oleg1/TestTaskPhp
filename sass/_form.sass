@@ -1,0 +1,42 @@
+.form
+    width: 50%
+    min-height: 350px
+    padding: 50px
+    margin: 50px auto
+    background: #FFFFFB
+    border: solid 3px rgb(237, 122, 0)
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    .form_item
+        margin: 0 0 25px 50px
+        textarea
+            &:hover
+                transition: .3s all
+                border: solid 1px rgb(237, 122, 0)
+        .form_item_input
+            &:hover
+                transition: .3s all
+                border: solid 2px rgb(237, 122, 0)
+    .form_button
+        display: block
+        width: 200px
+        height: 50px
+        margin-left: 50px
+        background: rgb(237, 122, 0)
+        border-radius: 15px
+        font-size: 20px
+        color: #ffffff
+        border: 3px solid transparent
+        transition: .4s
+        text-decoration-line: none
+        outline: none
+        &:hover
+            transform: translateY(3px)
+            cursor: pointer
+            color: #ffffff
+
+.error
+    color: #ff0000
+    vertical-align: top
+    
